@@ -1,14 +1,18 @@
 #! /usr/bin/perl
+
+use strict; 
+use warnings;
+
 print "###Bienvenido al concurso de Software Libre###\n";
 	
 print "¿Como te llamas?\n";
-$nombre=<STDIN>;
+my $nombre=<STDIN>;
 system("clear");
 print "Hola $nombre";
 print "A continuacion tendras que responder correctamente estas 10 preguntas para conseguir un regalo\n";
 
-$rand= int(rand(10));
-
+my $rand= int(rand(10));
+my ($p1, $p2, $p3, $p4, $p5, $p6, $p7, $p8, $p9, $p10, $p11);
 print "###################\n";
 print "######SUERTE#######\n";
 print "###################\n";
@@ -17,139 +21,139 @@ if ($rand==0){
 
 	print "¿Que animal relacionas con Software Libre?\n";
 	print " 1:Pinguino\n 2:Oso Panda\n 3:Iguana\n";
-	$p1=<STDIN>;
+	my $p1=<STDIN>;
 	 
 		if ($p1==1) {
 		print "Correcto, buena respuesta\n";
 
 			print "¿Que programa esta relacionado con Software Libre?\n";
 			print " 1:Gimp\n 2:Dreamweaver\n 3:Photoshop\n";
-			$p2=<STDIN>;
+			my $p2=<STDIN>;
 		 
 				if ($p2==1){
 				print "Vas bien, adelante\n";
 
 				print "¿Puedo tener Linux y Windows en la misma maquina?\n";
 				print " 1:Si\n 2:No\n 3:Crean conficto en el equipo\n";
-				$p3=<STDIN>;
+				my $p3=<STDIN>;
 				
-						if ($p3==1){
+				if ($p3==1){
 					print "Avanza viajero\n";
 
 					print "¿Si tengo problemas al escribir la eñe en Linux lo mejor es:?\n";
 					print " 1:Pulsar mas fuerte\n 2:Revisar la configuración de idioma según el pais y ajustarla al mio\n 3:Usar solo Windows
 
 					\n";
-					$p4=<STDIN>;
-
-							if ($p4==2){
+					my $p4=<STDIN>;
+					
+					if ($p4==2){
 						print "Vas bien, continua con la prueba\n";
 
 						print "¿Esta aplicación tiene problemas de compatibilidad con Linux?\n";
 						print " 1:Mozilla Firefox\n 2:Chromiun\n 3:Outlook\n";
-						$p5=<STDIN>;
+						my $p5=<STDIN>;
 							
-								if ($p5==3){
+						if ($p5==3){
 							print "Vas bien, continua con la prueba\n";
 
 							print "¿Conforman el menú de Ubuntu?\n";
 							print " 1:Mi Pc, Aplicaciones y Lugares\n 2:Aplicaciones, Lugares y Sistema\n 3:Panel de control, Escritorio y Redes\n";
-							$p6=<STDIN>;
+							my $p6=<STDIN>;
 								
 								if ($p6==2){
 								print "Vas bien, continua con la prueba\n";
 
 								print "¿Como se llama el Software que no es libre?\n";
 								print " 1:Privativo\n 2:Privilegiado\n 3:Primario\n";
-								$p7=<STDIN>;
+								my $p7=<STDIN>;
 									
 									if ($p7==1){
 									print "Vas bien, continua con la prueba\n";
 
 									print "¿El software libre permite:?\n";
 									print " 1:Reducir costos de las licencias\n 2:Participar en mejoras del software\n 3:Todas son correctas\n";
-									$p8=<STDIN>;
+									my $p8=<STDIN>;
 										
 										if ($p8==3){
 										print "Vas bien, continua con la prueba\n";
 
 										print "¿El programa libre equivalente a Microsoft Word es:?\n";
 										print " 1:Wordpad\n 2:OpenOffice Writter\n 3:Block de notas\n";
-										$p9=<STDIN>;
+										my $p9=<STDIN>;
 											
-											if ($p10==2){
-												print "Vas bien, continua con la prueba\n";
-
-												print "¿Estudiar como funciona el programa y adaptarlo a la necesidad de uno es la libertad numero...?\n";
-												print " 1:1\n 2:2\n 3:3\n";
-												$p11=<STDIN>;
-													
-													if ($p11==2){
+										if ($p9==2){
+										    print "Vas bien, continua con la prueba\n";
+										    
+										    print "¿Estudiar como funciona el programa y adaptarlo a la necesidad de uno es la libertad numero...?\n";
+										    print " 1:1\n 2:2\n 3:3\n";
+										    my $p10=<STDIN>;
+										    
+										    if ($p10==2){
 												print "Vas bien, continua con la prueba\n";
 
 												print "FELICIDADES";
 												print "Pregunta por tu premio";
-																							
-												
-												}
-												else
-												{ 
-												print "Lo siento, gracias por probar \n";
-												}
 												
 												
-												}
-												else
-												{ 
-												print "Lo siento, gracias por probar \n";
-												}
-										
+										    }
+										    else
+										    { 
+											print "Lo siento, gracias por probar \n";
+										    }
+										    
+										    
 										}
 										else
 										{ 
-										print "Lo siento, gracias por probar \n";
-										}		
-									
-									}
+										    print "Lo siento, gracias por probar \n";
+										}
+										
+										}
 									else
 									{ 
-									print "Lo siento, gracias por probar \n";
+									    print "Lo siento, gracias por probar \n";
+									}		
+									
 									}
-								}
 								else
 								{ 
-								print "Lo siento, gracias por probar \n";
+								    print "Lo siento, gracias por probar \n";
 								}
-							
-							}
+								}
 							else
 							{ 
-							print "Lo siento, gracias por probar \n";
+							    print "Lo siento, gracias por probar \n";
 							}
-						
+							
 						}
 						else
 						{ 
-						print "Lo siento, gracias por probar \n";
+						    print "Lo siento, gracias por probar \n";
 						}
-
+						
 					}
 					else
 					{ 
-					print "Lo siento, gracias por probar \n";
+					    print "Lo siento, gracias por probar \n";
 					}
-
-
+					
 				}
 				else
 				{ 
-				print "Lo siento, gracias por probar \n";
+				    print "Lo siento, gracias por probar \n";
 				}
-			}
-			else
-			{ 
-			print "Lo siento \n";
-			}
+				
+				
+				}
+		else
+		{ 
+		    print "Lo siento, gracias por probar \n";
+		}
+		}
+	else
+	{ 
+	    print "Lo siento \n";
+	}
 }
 
 if ($rand==1){
@@ -214,14 +218,14 @@ if ($rand==1){
 										print " 1:Una suite de programas ofimaticos\n 2:Un sistema operativo\n 3:Un antivirus\n";
 										$p9=<STDIN>;
 											
-											if ($p10==2){
+											if ($p9==2){
 												print "Vas bien, continua con la prueba\n";
 
 												print "¿Que cosas puedo hacer con GNU/Linux?\n";
 												print " 1:Bloquear el ordenador\n 2:Las mismas que con otro sistema operativo\n 3:Usar la mitad del ordenador\n";
-												$p11=<STDIN>;
+												$p10=<STDIN>;
 													
-													if ($p11==2){
+													if ($p10==2){
 												print "Vas bien, continua con la prueba\n";
 
 												print "FELICIDADES";
@@ -356,7 +360,7 @@ if ($rand==2){
 
 												print "¿Linux tuvo sus inicios en ...?\n";
 												print " 1:1991\n 2:1992\n 3:1993\n";
-												$p11=<STDIN>;
+												$p10=<STDIN>;
 													
 													if ($p10==2){
 												print "Vas bien, continua con la prueba\n";
@@ -489,24 +493,24 @@ if ($rand==3){
 										print " 1:Una suite de programas ofimaticos\n 2:Un sistema operativo\n 3:Un antivirus\n";
 										$p9=<STDIN>;
 											
-											if ($p10==2){
+										if ($p9==2){
 												print "Vas bien, continua con la prueba\n";
-
+												
 												print "¿Que cosas puedo hacer con GNU/Linux?\n";
 												print " 1:Bloquear el ordenador\n 2:Las mismas que con otro sistema operativo\n 3:Usar la mitad del ordenador\n";
-												$p11=<STDIN>;
-													
-													if ($p11==2){
-												print "Vas bien, continua con la prueba\n";
-
-												print "FELICIDADES";
-												print "Pregunta por tu premio";
+												$p10=<STDIN>;
 												
-												
+												if ($p10==2){
+												    print "Vas bien, continua con la prueba\n";
+												    
+												    print "FELICIDADES";
+												    print "Pregunta por tu premio";
+												    
+												    
 												}
 												else
 												{ 
-												print "Lo siento, gracias por probar \n";
+												    print "Lo siento, gracias por probar \n";
 												}
 												
 												
@@ -567,7 +571,7 @@ if ($rand==3){
 if ($rand==4){
 
 	print "¿El término Software Libre fue acuñado por?\n";
-	print " 1:Torvals\n 2:Stallman\n 3:Manuel Cogulludo\n";
+	print " 1:Torvadls\n 2:Stallman\n 3:Manuel Cogulludo\n";
 	$p1=<STDIN>;
 	 
 		if ($p1==1) {
@@ -626,7 +630,7 @@ if ($rand==4){
 										print " 1:Skydrive\n 2:Mozilla\n 3:Avira\n";
 										$p9=<STDIN>;
 											
-											if ($p10==2){
+										if ($p9==2){
 												print "Vas bien, continua con la prueba\n";
 
 												print "¿Que cosas puedo hacer con GNU/Linux?\n";
@@ -763,7 +767,7 @@ if ($rand==5){
 										print " 1:Una suite de programas ofimaticos\n 2:Un sistema operativo\n 3:Un antivirus\n";
 										$p9=<STDIN>;
 											
-											if ($p10==2){
+											if ($p9==2){
 												print "Vas bien, continua con la prueba\n";
 
 												print "¿Esta aplicación tiene problemas de compatibilidad con Linux?\n";
@@ -900,7 +904,7 @@ if ($rand==6){
 										print " 1:Crear graficos\n 2:Elaborar presentaciones\n 3:Redactar documentos\n";
 										$p9=<STDIN>;
 											
-											if ($p10==2){
+											if ($p9==2){
 												print "Vas bien, continua con la prueba\n";
 
 												print "¿Que cosas puedo hacer con GNU/Linux?\n";
@@ -1037,7 +1041,7 @@ if ($rand==7){
 										print " 1:Se basa en Linux pero muchas de sus aplicaciones tienen propietario\n 2:Solo funciona en dispositivos móviles\n 3:No sirve en Linux\n";
 										$p9=<STDIN>;
 											
-											if ($p10==2){
+											if ($p9==2){
 												print "Vas bien, continua con la prueba\n";
 
 												print "¿Que cosas puedo hacer con GNU/Linux?\n";
@@ -1174,7 +1178,7 @@ if ($rand==8){
 										print " 1:Skydrive\n 2:Mozilla\n 3:Avira\n";
 										$p9=<STDIN>;
 											
-											if ($p10==2){
+											if ($p9==2){
 												print "Vas bien, continua con la prueba\n";
 
 												print "¿Que cosas puedo hacer con GNU/Linux?\n";
@@ -1312,7 +1316,7 @@ if ($rand==9){
 										print " 1:Una suite de programas ofimaticos\n 2:Un sistema operativo\n 3:Un antivirus\n";
 										$p9=<STDIN>;
 											
-											if ($p10==2){
+										if ($p9==2){
 												print "Vas bien, continua con la prueba\n";
 
 												print "¿Que cosas puedo hacer con GNU/Linux?\n";
@@ -1451,10 +1455,10 @@ if ($rand==10){
 										print " 1:Wordpad\n 2:OpenOffice Writter\n 3:Block de notas\n";
 										$p9=<STDIN>;
 											
-											if ($p10==2){
-												print "Vas bien, continua con la prueba\n";
-
-												print "¿Estudiar como funciona el programa y adaptarlo a la necesidad de uno es la libertad numero...?\n";
+										if ($p9==2){
+										    print "Vas bien, continua con la prueba\n";
+										    
+										    print "¿Estudiar como funciona el programa y adaptarlo a la necesidad de uno es la libertad numero...?\n";
 												print " 1:1\n 2:2\n 3:3\n";
 												$p11=<STDIN>;
 													
@@ -1475,12 +1479,12 @@ if ($rand==10){
 												}
 												else
 												{ 
-												print "Lo siento, gracias por probar \n";
+												    print "Lo siento, gracias por probar \n";
 												}
 										
 										}
-										else
-										{ 
+									else
+									{ 
 										print "Lo siento, gracias por probar \n";
 										}		
 									
